@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5733780-54E7-4DB6-AD0F-DBB625445330}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Biblioteca</RootNamespace>
+    <AssemblyName>Biblioteca</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmInfoBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfoBook.Designer.cs">
+      <DependentUpon>FrmInfoBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchResultDos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchResultDos.Designer.cs">
+      <DependentUpon>FrmSearchResultDos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchResult.Designer.cs">
+      <DependentUpon>FrmSearchResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearchResultTres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearchResultTres.Designer.cs">
+      <DependentUpon>FrmSearchResultTres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSesion.Designer.cs">
+      <DependentUpon>FrmSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libro.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmInfoBook.resx">
+      <DependentUpon>FrmInfoBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchResultDos.resx">
+      <DependentUpon>FrmSearchResultDos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchResult.resx">
+      <DependentUpon>FrmSearchResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearchResultTres.resx">
+      <DependentUpon>FrmSearchResultTres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSesion.resx">
+      <DependentUpon>FrmSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pomeranian_891821.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookFundacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookDestejiendoArco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookMundoYDemonios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookElectron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1412879240_685082-Search-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookCosmos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookMagiaRealidad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookHaciaFundacion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookElFinEtermindad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1412887563_previous-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1412887548_next-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preludio-a-la-Fundación.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookHaciaFundacion1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookElectron1.jpg" />
+    <None Include="Resources\1410460712_cart-empty-32.png" />
+    <Content Include="Resources\ebook.png" />
+    <None Include="Resources\ebook3.jpg" />
+    <None Include="Resources\ebook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
