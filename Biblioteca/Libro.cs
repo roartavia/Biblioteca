@@ -7,5 +7,6 @@ namespace Biblioteca
     public class Libro
     {
         int x = 0;
+        int pablo = 1;
     }
 }
